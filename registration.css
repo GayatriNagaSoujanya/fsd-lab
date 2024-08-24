@@ -1,0 +1,111 @@
+/* Reset some default styles */
+body, h2, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the registration container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+/* Style the registration container */
+.registration-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+    width: 600px;
+}
+
+/* Style the heading */
+.registration-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Style the labels */
+.registration-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Style the input fields */
+.registration-container input[type="text"],
+.registration-container input[type="email"],
+.registration-container input[type="password"],
+.registration-container input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Style the radio group */
+.radio-group {
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style the checkbox group */
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style the submit button */
+.registration-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.mandatory
+{
+    color: red;
+    font-weight: bold;
+}
+.registration-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .registration-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
