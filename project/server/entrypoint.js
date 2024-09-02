@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const alienRouter = require('./Controllers/Controller.js')
 
 
-const url = 'mongodb+srv://prakki04:9701894423@cluster0.zeiywfe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const url = 'mongodb+srv://<db-username>:<db-password>@cluster0.zeiywfe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 const app = express()
 mongoose.connect(url)
 const con = mongoose.connection
